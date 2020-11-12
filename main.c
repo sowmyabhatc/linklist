@@ -207,7 +207,10 @@ list=slist_addnode_head(list,20);
 list=slist_addnode_head(list,4);
 list=slist_addnode_head(list,15);
 list=slist_addnode_head(list,10);
-
+assert(largestElement(list)==20);
+assert(smallestElement(list)==4);
+       
+       
 list1=slist_addnode_head(list1,10);
 list1=slist_addnode_head(list1,2);
 list1=slist_addnode_head(list1,4);
