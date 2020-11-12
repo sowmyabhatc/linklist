@@ -45,7 +45,8 @@ Slist*    slist_intersection(Slist *list,Slist *list1);
 Dlist     dlist_new();
 Dlist*    dlist_addnode_head(Dlist *list,int32_t value);
 uint8_t   dlist_lookup(const Dlist  *list, int32_t  key);
-
+int       largestElement(Slist *list);
+int       smallestElement(Slist *list);
 
 
 
