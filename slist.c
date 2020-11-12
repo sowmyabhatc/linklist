@@ -419,3 +419,33 @@ uint8_t  dlist_lookup(const Dlist  *list, int32_t  key){
 
  }
 
+// checking max  element
+int largestElement(Slist *list)
+{
+    Node* cur=list->head;
+    int max=cur->data;
+    while (cur != NULL) {
+
+
+        if (max < cur->data)
+            max = cur->data;
+             cur = cur->next;
+    }
+    return max;
+}
+
+// Function that returns smallest element
+// from the linked list.
+int smallestElement(Slist *list)
+{
+
+    Node* cur=list->head;
+    int min=cur->data;
+    while (cur != NULL) {
+        if (min > cur->data)
+            min = cur->data;
+
+        cur = cur->next;
+    }
+    return min;
+}
